@@ -1,0 +1,27 @@
+/* UserList.css */
+
+/* Container styling for the user list */
+.user-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Add a subtle background and padding for better look */
+.user-list-background {
+  background-color: white; /* Light gray background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the layout is mobile-friendly */
+@media (max-width: 768px) {
+  .user-list-container {
+    grid-template-columns: 1fr;
+  }
+}

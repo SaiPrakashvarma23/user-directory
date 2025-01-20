@@ -1,0 +1,123 @@
+/* Main container styling */
+.user-detail-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #F0F8FF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Go back button */
+/* Go back button */
+.go-back-button {
+  display: flex;
+  align-items: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 6px 12px;  /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;  /* Smaller font size */
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+  background-color: #2c7fbf;
+}
+
+.back-icon {
+  margin-right: 5px;
+  font-size: 1.2rem;  /* Slightly smaller icon */
+}
+
+
+/* User card container */
+.user-card {
+  text-align: left;
+  padding: 20px;
+}
+
+/* User details container - Removed background color */
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Header styling */
+.user-detail-header {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Individual detail row styling */
+.user-detail-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.user-detail-row span {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #2c3e50;
+}
+
+/* Icon styling */
+.detail-icon {
+  color: #242124;
+  margin-right: 10px;
+  font-size: 1.1rem; /* Larger icons for better visibility */
+}
+
+/* Link styling */
+a {
+  color: #1a1110;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Loading spinner */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error text styling */
+.error-text {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
